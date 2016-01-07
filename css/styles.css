@@ -1,0 +1,26 @@
+body {
+  font-family: sans-serif;
+}
+
+#command {
+  font-size: 1em;
+}
+#error {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: indianred;
+}
+#report {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: fuchsia;
+}
+
+#place {
+  font-style: italic;
+  color: indianred;
+}
+
+#lblCommand {
+  font-weight: bold;
+}

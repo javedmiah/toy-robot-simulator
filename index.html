@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Toy Robot Simulation</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<h2>Toy Robot Simulator</h2>
+
+<div>
+  <p>The application reads commands in the following formats (case insensitive):</p>
+  <ul>
+    <li>PLACE X, Y, F e.g. <span id="place">place 2,2, north</span></li>
+    <li>MOVE</li>
+    <li>LEFT</li>
+    <li>RIGHT</li>
+    <li>REPORT</li>
+  </ul>
+</div>
+
+<div>
+  <label for="command" id="lblCommand">Enter Command: </label>
+  <!-- TODO - Remove declarative events on command input
+  - Add event listeners for focusout and keydown instead!.
+  -->
+  <input type="text" id="command" onfocusout="processCommand(this.value)" onkeydown="if (event.keyCode == 13) processCommand(this.value);" autofocus>
+</div>
+
+<div id="error"></div>
+
+<div id="report"></div>
+
+<div>
+    <button id="restart" type="button">RESTART</button>
+</div>
+
+<canvas id="canvas" width="551" height="551"></canvas>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>

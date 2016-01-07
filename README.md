@@ -1,1 +1,1 @@
-This is HTML5 application simulating a Toy Robot using the Canvas element.
+This is a HTML5 application simulating a Toy Robot using the Canvas element.
